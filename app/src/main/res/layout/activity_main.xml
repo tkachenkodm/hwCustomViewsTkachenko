@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.hwcustomviews.FanControl
+        android:id="@+id/fcControl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/controlsMarginBottom"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.55" />
+
+    <com.example.hwcustomviews.RotatingFan
+        android:id="@+id/rfPropeller"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/controlsMarginBottom"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fcControl"
+        app:layout_constraintWidth_percent="0.35" />
+
+    <ImageButton
+        android:id="@+id/ibIncrease"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/increase_speed"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="@id/fcControl"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@id/fcControl"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fcControl" />
+
+    <ImageButton
+        android:id="@+id/ibDecrease"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/decrease_speed"
+        android:scaleType="fitCenter"
+        android:src="@drawable/minus"
+        app:layout_constraintBottom_toBottomOf="@id/fcControl"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/fcControl"
+        app:layout_constraintTop_toTopOf="@id/fcControl" />
+
+    <Button
+        android:id="@+id/bOpenFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_custom_view_group"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rfPropeller" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

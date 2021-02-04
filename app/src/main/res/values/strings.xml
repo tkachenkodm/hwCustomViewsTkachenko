@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">hwCustomViews</string>
+    <string name="increase_speed">Increase Speed</string>
+    <string name="speed_max">Max speed!</string>
+    <string name="speed_min">Min speed!</string>
+    <string name="decrease_speed">Decrease speed</string>
+    <string name="show_custom_view_group">Show custom view group</string>
+    <string name="title_placeholder">Title placeholder</string>
+    <string name="genre_placeholder">Genre placeholder</string>
+    <string name="price_placeholder">Price</string>
+    <string name="movie_poster">Movie poster</string>
+    <string name="change_tile">Change tile</string>
+    <string name="title_example">Spinning fan</string>
+</resources>

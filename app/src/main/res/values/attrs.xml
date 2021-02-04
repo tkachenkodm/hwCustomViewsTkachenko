@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MovieTileView">
+        <attr name="posterDrawable" format="reference"/>
+        <attr name="titleText" format="string"/>
+        <attr name="genreText" format="string"/>
+        <attr name="priceText" format="string"/>
+    </declare-styleable>
+</resources>
